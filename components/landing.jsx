@@ -69,7 +69,7 @@ const Landing = () => {
           credentials
         </h3>
       </div>
-      <img src="/5.png" className={s.photo} data-aos="fade-up" />
+      <img alt="" src="/5.png" className={s.photo} data-aos="fade-up" />
       <div className={s.text} data-aos="fade-left" data-aos-delay="400">
         <h1>
           <b>Driving the passion of design & development</b>

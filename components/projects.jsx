@@ -170,6 +170,7 @@ experience better.  `,
             projLink={project.projLink}
             projGit={project.projGit}
             projID={index}
+            key={index}
           />
         ))}
         <div className={s.ProjectCard}>

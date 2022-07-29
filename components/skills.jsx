@@ -87,7 +87,7 @@ const Skills = () => {
     },
   ];
   return (
-    <div className={s.skillsPage} id='Skills'>
+    <div className={s.skillsPage} id="Skills">
       <h2 className={s.heading}>skills </h2>
       <h4 className={s.next}>{" /> "} &nbsp; &nbsp;certifications </h4>
       {/* <h4 className={s.bar}></h4> */}
@@ -96,9 +96,9 @@ const Skills = () => {
       </h2>
       {/* <h4 className={s.bar2}></h4> */}
       <div className={s.skillsHolder}>
-        {languages.map((lang) => (
-          <div className={s.skillsBox}>
-            <img src={lang.img} />
+        {languages.map((lang, index) => (
+          <div className={s.skillsBox} key={index}>
+            <img alt="" src={lang.img} />
             <h4>{lang.lang}</h4>
           </div>
         ))}
@@ -109,9 +109,9 @@ const Skills = () => {
       </h2>
       {/* <h4 className={s.bar2}></h4> */}
       <div className={s.skillsHolder}>
-        {tools.map((lang) => (
-          <div className={s.skillsBox}>
-            <img src={lang.img} style={{ height: "8vh" }} />
+        {tools.map((lang ,index) => (
+          <div className={s.skillsBox} key={index}>
+            <img alt="" src={lang.img} style={{ height: "8vh" }} />
             <h4>{lang.lang}</h4>
           </div>
         ))}

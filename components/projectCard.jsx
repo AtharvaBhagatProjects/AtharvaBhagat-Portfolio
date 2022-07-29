@@ -30,7 +30,7 @@ const ProjectCard = (props) => {
         <h4 data-aos="fade-up">{props.projDesc}</h4>
         <div className={s.Stack} data-aos="fade-right">
           {props.projStack.map((stack) => (
-            <b>{stack}</b>
+            <b key={stack}>{stack}</b>
           ))}
         </div>
         <div className={s.gitlink} data-aos="fade-up">

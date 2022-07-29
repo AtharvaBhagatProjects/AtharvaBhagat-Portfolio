@@ -109,14 +109,14 @@ const Certificates = () => {
     },
   ];
   return (
-    <div className={s.Certificates} id='Certificates'>
+    <div className={s.Certificates} id="Certificates">
       <h2 className={s.heading}>certifications </h2>
       <h4 className={s.next}>{" /> "} &nbsp; &nbsp;contact </h4>
 
       <div className={s.CertificatesHolder}>
         {Certificates.map((cert, index) => (
-          <div className={`${s.Certificate}`} data-aos="fade-up">
-            <img src={cert.img}></img>
+          <div className={`${s.Certificate}`} key={index} data-aos="fade-up">
+            <img alt="" src={cert.img}></img>
             <div>
               <h2>{cert.cert}</h2>
               <h4>{cert.company}</h4>
