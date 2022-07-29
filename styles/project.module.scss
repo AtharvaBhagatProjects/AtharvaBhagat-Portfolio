@@ -1,0 +1,151 @@
+.ProjectsPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-bottom: 10vh;
+}
+.heading {
+  position: absolute;
+  left: 0;
+  color: rgba(0, 183, 255, 0.718);
+  //   color: white;
+  font-size: 10vh;
+  top: 12vh;
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+  //   transform: rotate(180deg);
+  margin-left: -5vh;
+}
+
+.next {
+  margin-top: 5vh;
+  margin-left: 0vw;
+  background-color: rgb(243, 208, 8);
+  padding: 4vh 1vh;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.ProjHolder {
+  margin-top: 8vh;
+  &::-webkit-scrollbar {
+    width: 0px;
+  }
+}
+
+.ProjectCard {
+  width: 85vw;
+  background-color: white;
+  padding: 5vh;
+  margin-top: 5vh;
+  border-radius: 15px;
+
+  display: flex;
+  filter: drop-shadow(5px 5px 5px rgb(219, 232, 237));
+  //   align-items: center;
+  justify-content: space-between;
+  video {
+    height: 40vh;
+    border-radius: 15px;
+  }
+  .Stack {
+    display: flex;
+    flex-wrap: wrap;
+
+    b {
+      margin-right: 1vw;
+    }
+  }
+  .info {
+    width: 45%;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  p {
+    margin: 1vh 0;
+  }
+  h4 {
+    margin: 2vh 0;
+    text-align: justify;
+    color: gray;
+  }
+  .gitlink {
+    text-decoration: none;
+    color: rgb(249, 5, 119);
+
+    display: flex;
+    p {
+      cursor: pointer;
+
+      margin-right: 1vw;
+      &:nth-child(2) {
+        color: rgb(152, 7, 241);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 720px) {
+  
+  .heading {
+    position: static;
+    font-size: 8vh;
+    writing-mode: horizontal-tb;
+    margin-left: 0vh;
+  }
+
+  .next {
+    display: none;
+  }
+
+  .ProjHolder {
+    margin-top: 0vh;
+  }
+
+  .ProjectCard {
+    width: 85vw;
+    background-color: white;
+    padding: 2vh;
+    border-radius: 10px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    video {
+      height: 20vh;
+      border-radius: 10px;
+    }
+    .Stack {
+      b {
+        margin-right: 3vw;
+      }
+    }
+    .info {
+      width: 100%;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    p {
+      margin: 1vh 0;
+    }
+
+    h2 {
+      font-size: medium;
+    }
+    h4 {
+      margin: 2vh 0;
+      font-size: small;
+    }
+  }
+}

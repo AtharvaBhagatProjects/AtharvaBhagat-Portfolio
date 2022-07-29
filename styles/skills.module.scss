@@ -1,0 +1,108 @@
+.skillsPage {
+  img {
+    height: 5vh;
+  }
+  position: relative;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 5vh;
+  .lang {
+    margin: 2vh 0;
+  }
+}
+.heading {
+  position: absolute;
+  left: 0;
+  font-size: 10vh;
+  top: 7vh;
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+  margin-left: -5vh;
+  color: rgba(232, 19, 129, 0.812);
+}
+
+.bar,
+.bar2 {
+  height: 3vh;
+  width: 1vh;
+  background-color: rgba(232, 19, 129, 0.812);
+  margin: 1vh;
+  transform: rotate(-30deg);
+  margin-left: -2vw;
+}
+.bar2 {
+  height: 1.5vh;
+  width: 0.5vh;
+  transform: rotate(-30deg);
+  margin-left: 2vw;
+}
+
+.next {
+  margin-top: 5vh;
+  margin-left: 0vw;
+  background-color: rgb(243, 208, 8);
+  padding: 4vh 1vh;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.skillsHolder {
+  width: 80vw;
+  display: flex;
+  margin-bottom: 5vh;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  .skillsBox {
+    width: 20vh;
+    margin-right: 1vw;
+    height: 17vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    img {
+      height: 10vh;
+      transition-duration: 0.2s;
+      margin-bottom: 0.5vh;
+
+      &:hover {
+        height: 12vh;
+        transition-duration: 0.2s;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .heading {
+    position: static;
+    font-size: 8vh;
+    writing-mode: horizontal-tb;
+    margin-left: 0vh;
+  }
+
+  .skillsPage {
+    height: fit-content;
+  }
+
+  .next {
+    display: none;
+  }
+
+  .skillsHolder {
+    width: 90vw;
+    display: flex;
+
+    .skillsBox {
+      width: 29vw;
+    }
+  }
+}

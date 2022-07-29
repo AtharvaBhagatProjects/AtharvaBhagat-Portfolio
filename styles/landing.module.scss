@@ -1,0 +1,218 @@
+.landing {
+  position: relative;
+}
+
+.navBar {
+  height: 15vh;
+  padding: 5vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  h1 {
+    font-size: 4vh;
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+    font-weight: bold;
+    transition-duration: 0.5s;
+
+    &:hover {
+      color: rgb(9, 136, 145);
+      transition-duration: 0.5s;
+    }
+    div {
+      height: 1vh;
+      width: 1vh;
+      margin-top: 3.5vh;
+      margin-left: 0.2vh;
+      border-radius: 50%;
+      background-color: rgb(231, 208, 32);
+    }
+  }
+  div {
+    display: flex;
+    justify-content: space-between;
+
+    width: 20vw;
+    transition-duration: 0.2s;
+
+    h4 {
+      cursor: pointer;
+
+      margin-top: 0;
+      &:hover {
+        margin-top: -1vh;
+        transition-duration: 0.2s;
+        color: rgb(242, 8, 86);
+      }
+    }
+  }
+}
+.background {
+  height: 85vh;
+  width: 85%;
+  margin-left: 8%;
+  background-color: rgb(13, 215, 230);
+}
+.half {
+  position: absolute;
+  height: 75vh;
+  width: 32%;
+  background-color: rgb(231, 208, 32);
+  top: 0;
+  right: 40%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10vh 20vh;
+  h4 {
+    cursor: pointer;
+    &:hover {
+      color: rgb(8, 172, 184);
+    }
+  }
+}
+.cvButtons {
+  position: absolute;
+  bottom: 0;
+  background-color: rgb(255, 255, 255);
+  height: 15vh;
+  width: 70%;
+  right: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5vw;
+  h3 {
+    padding: 1vh 0;
+    border-bottom: 1px solid black;
+    width: fit-content;
+    cursor: pointer;
+    transition-duration: 0.2s;
+
+    &:hover {
+      padding-bottom: 2vh;
+      transition-duration: 0.2s;
+      color: rgb(242, 8, 86);
+    }
+  }
+}
+.photo {
+  position: absolute;
+  bottom: 12vh;
+  left: 30%;
+  height: 70vh;
+}
+
+.text {
+  position: absolute;
+  top: 30vh;
+  left: 57%;
+  transform: scale(1.1);
+
+  width: 30vw;
+  h2 {
+    margin-top: 3vh;
+  }
+  p {
+    margin-bottom: 3vh;
+    width: 25vw;
+  }
+  h3 {
+    margin-top: 4vh;
+    padding: 1vh 0;
+    border-bottom: 2px solid black;
+    width: fit-content;
+    cursor: pointer;
+  }
+}
+
+.emboss {
+  h2 {
+    margin: -1.3vh 0;
+  }
+  position: absolute;
+  bottom: 0vh;
+  margin-left: 5%;
+  h1 {
+    margin-bottom: 3vh;
+  }
+  h4 {
+    margin-top: 5vh;
+    margin-left: -5vw;
+    background-color: rgb(243, 208, 8);
+    padding: 2vh 1vh;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .landing {
+    width: 100%;
+    height: 95vh;
+    overflow: hidden;
+  }
+  .navBar {
+    width: 100vw;
+    padding: 0vh 5vw;
+    height: 12vh;
+
+    h1 {
+      font-size: 3vh;
+    }
+    div {
+      justify-content: space-evenly;
+      width: 50vw;
+    }
+  }
+  .background {
+    height: 85vh;
+    width: 100%;
+    margin-left: 0%;
+    background-color: rgb(255, 255, 255);
+  }
+  .half {
+    display: none;
+  }
+  .cvButtons {
+    position: absolute;
+
+    height: 15vh;
+    width: 100%;
+
+    padding: 0 8vw;
+    h3 {
+      font-size: small;
+      border: none;
+      &:nth-child(3) {
+        display: none;
+      }
+    }
+  }
+  .photo {
+    position: absolute;
+    bottom: 12vh;
+    left: 48%;
+    height: 35vh;
+  }
+
+  .text {
+    position: absolute;
+    top: 8vh;
+    left: 0%;
+    transform: scale(1.1);
+    padding: 5vh;
+    width: 100vw;
+    h1 {
+      color: rgb(8, 208, 243);
+    }
+    p {
+      width: 85vw;
+    }
+  }
+
+  .emboss {
+    display: none;
+  }
+}
