@@ -53,7 +53,7 @@ const Landing = () => {
         <Link href="/ATHARVA BHAGAT RESUME.pdf">
           <h3>resume</h3>
         </Link>
-        <Link href="/ATHARVA BHAGAT RESUME.pdf">
+        <Link href="/Design Portfolio.pdf">
           <h3>ui portfolio</h3>
         </Link>
         <h3

@@ -37,9 +37,9 @@ const ProjectCard = (props) => {
           <Link href={props.projLink}>
             <p>View Deployment</p>
           </Link>
-          <Link href={props.projGit}>
+          {/* <Link href={props.projGit}>
             <p>Github Repo</p>
-          </Link>
+          </Link> */}
         </div>
       </div>
     </div>

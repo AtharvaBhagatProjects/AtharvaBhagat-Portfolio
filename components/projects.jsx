@@ -23,7 +23,7 @@ const Projects = () => {
         "TensorflowJS",
         "PythonAI",
       ],
-      projLink: "",
+      projLink: "https://codigoindia.netlify.app",
       projGit: "",
     },
     {
@@ -42,7 +42,7 @@ const Projects = () => {
         "Heroku",
         "NodeJS",
       ],
-      projLink: "",
+      projLink: "https://suchitarajestudio.netlify.app",
       projGit: "",
     },
     {
@@ -58,7 +58,7 @@ const Projects = () => {
         "Heroku",
         "NodeJS",
       ],
-      projLink: "",
+      projLink: "https://connext.netlify.app",
       projGit: "",
     },
     {
@@ -75,7 +75,7 @@ const Projects = () => {
         "Heroku",
         "NodeJS",
       ],
-      projLink: "",
+      projLink: "https://connext-arb-books.vercel.app",
       projGit: "",
     },
     {
@@ -91,7 +91,7 @@ const Projects = () => {
         "GoogleSheets",
         "MailSystem",
       ],
-      projLink: "",
+      projLink: "https://qvaesha-arb-hospitals.netlify.app",
       projGit: "",
     },
     {
@@ -107,7 +107,7 @@ const Projects = () => {
         "NodeJS",
         "GoogleAuth",
       ],
-      projLink: "",
+      projLink: "https://devconnect-tsec.netlify.app",
       projGit: "",
     },
     {
