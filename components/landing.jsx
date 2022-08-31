@@ -50,10 +50,10 @@ const Landing = () => {
         </Link>
       </div>
       <div className={s.cvButtons} data-aos="fade-up">
-        <Link href="/ATHARVA BHAGAT RESUME.pdf">
+        <Link href="https://drive.google.com/file/d/1xRtojb560ajAx0EKbiQkWQvuLv6oGgcA/view?usp=sharing">
           <h3>resume</h3>
         </Link>
-        <Link href="/Design Portfolio.pdf">
+        <Link href="https://drive.google.com/file/d/1ncECcaUoYgSBhtPB5nPRiVeGpDlGMsPG/view?usp=sharing">
           <h3>ui portfolio</h3>
         </Link>
         <h3
